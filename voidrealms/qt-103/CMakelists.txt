@@ -1,0 +1,30 @@
+cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
+
+project(vr_qt_103) # Your project name
+
+include(CheckCXXCompilerFlag)
+include(CheckCXXSourceCompiles)
+include(CheckIncludeFile)
+include(CheckIncludeFiles)
+include(CheckTypeSize)
+ 
+find_package(CopperSpice REQUIRED)
+  
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_INCLUDE_DIRECTORIES_BEFORE ON)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 17)
+
+# location for building binary files
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+set (SOURCES
+    myerror.cpp
+)
+
+set (HEADERS 
+    myerror.h
+)
+
+add_executable( ${PROJECT_NAME} main.cpp ${SOURCES} ${HEADERS} )
+target_link_libraries( ${PROJECT_NAME} CopperSpice::CsCore )
