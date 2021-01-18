@@ -6,16 +6,16 @@
 
 class MyError : public QObject
 {
-    CS_OBJECT(MyError)
+    Q_OBJECT
 public:
     explicit MyError(QObject *parent = 0);
     
     QString Message();
     void SetMessage(QString Msg);
 
-public:
+signals:
     
-public :
+public slots:
     
 protected:
     QString mMessage;

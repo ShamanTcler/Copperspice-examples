@@ -23,7 +23,7 @@ set (SOURCES
 )
 
 set (HEADERS 
-    myerror.h
+    myerror.cs
 )
 
 add_executable( ${PROJECT_NAME} main.cpp ${SOURCES} ${HEADERS} )
