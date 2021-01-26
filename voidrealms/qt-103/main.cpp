@@ -31,10 +31,11 @@ void test()
     }
     catch(...)
     {
-        qDebug() << "Unknown Error has occured";
+        qDebug() << "Unknown Error has occurred";
     }
 
-    qDebug() << "Glag that's over with";
+    qDebug() << "Glad that's over with";
+    exit(0);
 }
 
 int main(int argc, char *argv[])

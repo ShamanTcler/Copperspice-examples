@@ -1,4 +1,4 @@
-#include "myerror.cs"
+#include "myerror.h"
 
 MyError::MyError(QObject *parent) :
     QObject(parent)
