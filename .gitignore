@@ -33,3 +33,5 @@
 
 # stock names to be ignored for build and release libs
 build/
+conan_build/
+nopkg_build/
